@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Domek w gorach"
+        android:textColor="#808080"
+        android:textSize="40dp"
+         />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="-27dp"
+        android:layout_height="250dp"
+        android:src="@drawable/domekgorski" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="ExtraText">
+
+
+        <Button
+            android:id="@+id/Like_Button"
+            android:layout_width="141dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#008080"
+            android:text="@string/polub"
+            app:cornerRadius="0dp" />
+
+        />
+
+        <Button
+            android:id="@+id/Delete_Button"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#008080"
+            android:text="USUN"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/Save_Button"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#008080"
+            android:text="ZAPISZ"
+            app:cornerRadius="0dp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/Like_Counter_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Polubien"
+        android:layout_gravity="end"
+        android:layout_marginTop="2dp"
+        android:textSize="22sp"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#808080"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opis"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:text="Odwiedz komfortowy domek w Sudetach, blisko do szklakow Turystycznych"
+        android:textColor="#808080" />
+
+
+
+</LinearLayout>
